@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  /* Custom brand colors for easier access */
+  --color-brand-red: #B91C1C; /* merah tua logo accent (#B91C1C) */
+  --color-brand-blue-light: #F0F9FF; /* biru muda sekali sky-50 for soft cards */
+  --color-brand-blue-border: #E0F2FE; /* sky-100 border */
+  --color-brand-blue-text: #0369A1; /* sky-700 text accent */
+}
+
+/* Base custom styles to make it extremely neat and banking-app clean */
+body {
+  font-family: var(--font-sans);
+  background-color: #F5F6F8; /* abu-abu muda / putih kotor agar kartu putih melayang */
+  color: #333333; /* abu-abu tua (#333333) instead of pitch black or gray-700 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide horizontal scrollbar but preserve functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
